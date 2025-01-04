@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neonatal Care Calculator</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'calculators/css/style.css' %}">
-</head>
-<body>
-    <header class="header">
-        <h1 class="header-title">Neonatal Calculator Care</h1>
-    </header>
+{% extends 'calculators/base.html' %}
 
-    <main class="main-content">
-        <button class="calculator-button" onclick="window.location.href='/bilirubin-calculator'">
-            Calculadora de Bilirrubina
-        </button>
-    </main>
+{% block title %}Home - Neonatal Calculator Care{% endblock %}
 
-    <footer class="footer">
-        <p class="footer-text">Copyright © 2025 Neonatal Care. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#" class="footer-link">Privacy Policy</a>
-            <a href="#" class="footer-link">Terms of Use</a>
-            <a href="#" class="footer-link">Support</a>
-        </div>
-    </footer>
-</body>
-</html>
+{% block content %}
+<button class="calculator-button" onclick="window.location.href='{% url 'bilirubin_calculator' %}'">
+    Calculadora de Bilirrubina
+</button>
+{% endblock %}
