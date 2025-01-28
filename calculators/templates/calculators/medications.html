@@ -3,5 +3,115 @@
 {% block title %}Medications Calculator - Neonatal Calculator Care{% endblock %}
 
 {% block content %}
-<h2 class="title">Medications Calculator</h2>
+<div class="medications-container">
+    <h2 class="title">Medications Calculator</h2>
+    
+    <form class="medications-form">
+        <div class="input-group">
+            <div class="form-field">
+                <label for="birth-date">Data de Nascimento</label>
+                <input type="date" id="birth-date" name="birth-date" required>
+            </div>
+            
+            <div class="form-field">
+                <label for="gestational-age">Idade Gestacional</label>
+                <input type="number" id="gestational-age" name="gestational-age" min="20" max="42" required>
+            </div>
+        </div>
+
+        <div class="antibiotics-section">
+            <h3>Antibióticos</h3>
+            <div class="checkbox-grid">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="amikacin" name="antibiotics" value="amikacin">
+                    <label for="amikacin">Amicacina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="ampicillin" name="antibiotics" value="ampicillin">
+                    <label for="ampicillin">Ampicilina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cefepime" name="antibiotics" value="cefepime">
+                    <label for="cefepime">Cefepime</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cefotaxime" name="antibiotics" value="cefotaxime">
+                    <label for="cefotaxime">Cefotaxima</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cefoxitin" name="antibiotics" value="cefoxitin">
+                    <label for="cefoxitin">Cefoxitina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="ceftazidime" name="antibiotics" value="ceftazidime">
+                    <label for="ceftazidime">Ceftazidima</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="ceftriaxone" name="antibiotics" value="ceftriaxone">
+                    <label for="ceftriaxone">Ceftriaxona</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cefazolin" name="antibiotics" value="cefazolin">
+                    <label for="cefazolin">Cefazolina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="ciprofloxacin" name="antibiotics" value="ciprofloxacin">
+                    <label for="ciprofloxacin">Ciprofloxacina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="clindamycin" name="antibiotics" value="clindamycin">
+                    <label for="clindamycin">Clindamicina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="chloramphenicol" name="antibiotics" value="chloramphenicol">
+                    <label for="chloramphenicol">Cloranfenicol</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="erythromycin" name="antibiotics" value="erythromycin">
+                    <label for="erythromycin">Eritromicina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="gentamicin" name="antibiotics" value="gentamicin">
+                    <label for="gentamicin">Gentamicina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="meropenem" name="antibiotics" value="meropenem">
+                    <label for="meropenem">Meropenem</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="metronidazole" name="antibiotics" value="metronidazole">
+                    <label for="metronidazole">Metronidazol</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="oxacillin" name="antibiotics" value="oxacillin">
+                    <label for="oxacillin">Oxacilina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="penicillin" name="antibiotics" value="penicillin">
+                    <label for="penicillin">Penicilina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="piperacillin-tazobactam" name="antibiotics" value="piperacillin-tazobactam">
+                    <label for="piperacillin-tazobactam">Pipe-Tazobactam</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="piperacillin" name="antibiotics" value="piperacillin">
+                    <label for="piperacillin">Piperacilina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="teicoplanin" name="antibiotics" value="teicoplanin">
+                    <label for="teicoplanin">Teicoplanina</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="trimethoprim-sulfamethoxazole" name="antibiotics" value="trimethoprim-sulfamethoxazole">
+                    <label for="trimethoprim-sulfamethoxazole">Trimetropim-Sulfametoxazol</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="vancomycin" name="antibiotics" value="vancomycin">
+                    <label for="vancomycin">Vancomicina</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
 {% endblock %}
