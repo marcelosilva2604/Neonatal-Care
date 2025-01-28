@@ -145,6 +145,8 @@
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .input-group {
@@ -212,6 +214,26 @@
     color: #1d1d1f;
     font-size: 14px;
     cursor: pointer;
+}
+
+.calculate-button {
+    background-color: #34c759;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+    margin: 30px auto 0;
+}
+
+.calculate-button:hover {
+    background-color: #30b753;
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(52, 199, 89, 0.2);
 }
 
 @media (max-width: 734px) {

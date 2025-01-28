@@ -17,6 +17,11 @@
                 <label for="gestational-age">Idade Gestacional</label>
                 <input type="number" id="gestational-age" name="gestational-age" min="20" max="42" required>
             </div>
+
+            <div class="form-field">
+                <label for="weight">Peso (kg)</label>
+                <input type="text" id="weight" name="weight" pattern="[0-9]*[.,]?[0-9]+" required>
+            </div>
         </div>
 
         <div class="antibiotics-section">
@@ -112,6 +117,10 @@
                 </div>
             </div>
         </div>
+
+        <button type="submit" class="calculate-button">
+            Calcular
+        </button>
     </form>
 </div>
 {% endblock %}
