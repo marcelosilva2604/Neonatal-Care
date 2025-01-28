@@ -6,3 +6,9 @@ def home(request):
 
 def bilirubin_calculator(request):
     return render(request, 'calculators/bilirubin.html')
+
+def medications_calculator(request):
+    return render(request, 'calculators/medications.html')
+
+def fluid_balance_calculator(request):
+    return render(request, 'calculators/fluid_balance.html')
