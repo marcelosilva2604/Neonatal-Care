@@ -69,6 +69,15 @@
 }
 
 /* Calculator Button Styles */
+.calculator-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
 .calculator-button {
     background-color: #0071e3;
     color: white;
@@ -81,6 +90,9 @@
     transition: all 0.3s ease;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     transform: scale(1);
+    width: 300px;
+    text-align: center;
+    display: block;
 }
 
 .calculator-button:hover {
